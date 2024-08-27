@@ -1,0 +1,372 @@
+
+    <html>
+    <head>
+        <style>
+            table { border-collapse: collapse; width: 100%; }
+            th, td { border: 1px solid black; padding: 8px; text-align: left; }
+            img { max-width: 300px; }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Metric</th>
+                
+                <th>fjk7qjcz</th>
+                
+                <th>szn8xp4d</th>
+                
+                <th>working</th>
+                
+                <th>h0_l0_exp</th>
+                
+                <th>h0_l0</th>
+                
+                <th>qa28omqr</th>
+                
+                <th>h0_l30</th>
+                
+            </tr>
+            <tr>
+                <td>Sparsity</td>
+                
+                <td>0.6047308444976807</td>
+                
+                <td>0.5084351301193237</td>
+                
+                <td>0.49697065353393555</td>
+                
+                <td>0.5025969743728638</td>
+                
+                <td>0.5185737013816833</td>
+                
+                <td>0.5081221461296082</td>
+                
+                <td>0.4887533187866211</td>
+                
+            </tr>
+            <tr>
+                <td>Feature Visualization</td>
+                
+                <td><img src="fjk7qjcz_feature_viz.png"></td>
+                
+                <td><img src="szn8xp4d_feature_viz.png"></td>
+                
+                <td><img src="working_feature_viz.png"></td>
+                
+                <td><img src="h0_l0_exp_feature_viz.png"></td>
+                
+                <td><img src="h0_l0_feature_viz.png"></td>
+                
+                <td><img src="qa28omqr_feature_viz.png"></td>
+                
+                <td><img src="h0_l30_feature_viz.png"></td>
+                
+            </tr>
+            <tr>
+                <td>Feature Sparsity Distribution</td>
+                
+                <td>
+                    <img src="fjk7qjcz_feature_sparsity.png">
+                    <p>Overall Sparsity: 0.5979725122451782</p>
+                </td>
+                
+                <td>
+                    <img src="szn8xp4d_feature_sparsity.png">
+                    <p>Overall Sparsity: 0.5035457611083984</p>
+                </td>
+                
+                <td>
+                    <img src="working_feature_sparsity.png">
+                    <p>Overall Sparsity: 0.5075807571411133</p>
+                </td>
+                
+                <td>
+                    <img src="h0_l0_exp_feature_sparsity.png">
+                    <p>Overall Sparsity: 0.4995674788951874</p>
+                </td>
+                
+                <td>
+                    <img src="h0_l0_feature_sparsity.png">
+                    <p>Overall Sparsity: 0.49800610542297363</p>
+                </td>
+                
+                <td>
+                    <img src="qa28omqr_feature_sparsity.png">
+                    <p>Overall Sparsity: 0.5062026381492615</p>
+                </td>
+                
+                <td>
+                    <img src="h0_l30_feature_sparsity.png">
+                    <p>Overall Sparsity: 0.5057263374328613</p>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Activation Distribution</td>
+                
+                <td><img src="fjk7qjcz_activation_dist.png"></td>
+                
+                <td><img src="szn8xp4d_activation_dist.png"></td>
+                
+                <td><img src="working_activation_dist.png"></td>
+                
+                <td><img src="h0_l0_exp_activation_dist.png"></td>
+                
+                <td><img src="h0_l0_activation_dist.png"></td>
+                
+                <td><img src="qa28omqr_activation_dist.png"></td>
+                
+                <td><img src="h0_l30_activation_dist.png"></td>
+                
+            </tr>
+            <tr>
+                <td>Reconstruction</td>
+                
+                <td><img src="fjk7qjcz_reconstruction.png"></td>
+                
+                <td><img src="szn8xp4d_reconstruction.png"></td>
+                
+                <td><img src="working_reconstruction.png"></td>
+                
+                <td><img src="h0_l0_exp_reconstruction.png"></td>
+                
+                <td><img src="h0_l0_reconstruction.png"></td>
+                
+                <td><img src="qa28omqr_reconstruction.png"></td>
+                
+                <td><img src="h0_l30_reconstruction.png"></td>
+                
+            </tr>
+            <tr>
+                <td>Configuration</td>
+                
+                <td><pre>{
+  "activation_fn_kwargs": {},
+  "activation_fn_str": "relu",
+  "apply_b_dec_to_input": false,
+  "architecture": "standard",
+  "context_size": 512,
+  "d_in": 1024,
+  "d_sae": 16384,
+  "dataset_path": "apollo-research/roneneldan-TinyStories-tokenizer-gpt2",
+  "dataset_trust_remote_code": true,
+  "decoder_heuristic_init": true,
+  "decoder_orthogonal_init": false,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "finetuning_scaling_factor": false,
+  "hook_head_index": null,
+  "hook_layer": 0,
+  "hook_name": "blocks.0.hook_mlp_out",
+  "init_encoder_as_decoder_transpose": true,
+  "l1_coefficient": 5,
+  "lp_norm": 1.0,
+  "model_name": "tiny-stories-1L-21M",
+  "mse_loss_normalization": null,
+  "noise_scale": 0.0,
+  "normalize_activations": "expected_average_only_in",
+  "normalize_sae_decoder": false,
+  "prepend_bos": true,
+  "sae_lens_training_version": "3.14.0",
+  "scale_sparsity_penalty_by_decoder_norm": true,
+  "use_ghost_grads": false
+}</pre></td>
+                
+                <td><pre>{
+  "activation_fn_kwargs": {},
+  "activation_fn_str": "relu",
+  "apply_b_dec_to_input": false,
+  "architecture": "standard",
+  "context_size": 1024,
+  "d_in": 3072,
+  "d_sae": 98304,
+  "dataset_path": "mlfoundations/dclm-baseline-1.0",
+  "dataset_trust_remote_code": true,
+  "decoder_heuristic_init": true,
+  "decoder_orthogonal_init": false,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "finetuning_scaling_factor": false,
+  "hook_head_index": null,
+  "hook_layer": 31,
+  "hook_name": "blocks.31.hook_resid_post",
+  "init_encoder_as_decoder_transpose": true,
+  "l1_coefficient": 15,
+  "lp_norm": 1.0,
+  "model_name": "microsoft/Phi-3-mini-4k-instruct",
+  "mse_loss_normalization": null,
+  "noise_scale": 0.0,
+  "normalize_activations": "expected_average_only_in",
+  "normalize_sae_decoder": false,
+  "prepend_bos": true,
+  "sae_lens_training_version": "3.14.0",
+  "scale_sparsity_penalty_by_decoder_norm": true,
+  "use_ghost_grads": false
+}</pre></td>
+                
+                <td><pre>{
+  "activation_fn_kwargs": {},
+  "activation_fn_str": "relu",
+  "apply_b_dec_to_input": false,
+  "architecture": "standard",
+  "context_size": 512,
+  "d_in": 3072,
+  "d_sae": 98304,
+  "dataset_path": "NeelNanda/c4-code-20k",
+  "dataset_trust_remote_code": true,
+  "decoder_heuristic_init": true,
+  "decoder_orthogonal_init": false,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "finetuning_scaling_factor": false,
+  "hook_head_index": null,
+  "hook_layer": 0,
+  "hook_name": "blocks.0.hook_mlp_out",
+  "init_encoder_as_decoder_transpose": true,
+  "l1_coefficient": 8,
+  "lp_norm": 1.0,
+  "model_name": "microsoft/Phi-3-mini-4k-instruct",
+  "mse_loss_normalization": null,
+  "noise_scale": 0.0,
+  "normalize_activations": "expected_average_only_in",
+  "normalize_sae_decoder": false,
+  "prepend_bos": true,
+  "sae_lens_training_version": "3.14.0",
+  "scale_sparsity_penalty_by_decoder_norm": true,
+  "use_ghost_grads": false
+}</pre></td>
+                
+                <td><pre>{
+  "activation_fn_kwargs": {},
+  "activation_fn_str": "relu",
+  "apply_b_dec_to_input": false,
+  "architecture": "standard",
+  "context_size": 512,
+  "d_in": 3072,
+  "d_sae": 98304,
+  "dataset_path": "NeelNanda/c4-code-20k",
+  "dataset_trust_remote_code": true,
+  "decoder_heuristic_init": true,
+  "decoder_orthogonal_init": false,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "finetuning_scaling_factor": false,
+  "hook_head_index": null,
+  "hook_layer": 0,
+  "hook_name": "blocks.0.hook_mlp_out",
+  "init_encoder_as_decoder_transpose": true,
+  "l1_coefficient": 8,
+  "lp_norm": 1.0,
+  "model_name": "microsoft/Phi-3-mini-4k-instruct",
+  "mse_loss_normalization": null,
+  "noise_scale": 0.0,
+  "normalize_activations": "expected_average_only_in",
+  "normalize_sae_decoder": false,
+  "prepend_bos": true,
+  "sae_lens_training_version": "3.14.0",
+  "scale_sparsity_penalty_by_decoder_norm": true,
+  "use_ghost_grads": false
+}</pre></td>
+                
+                <td><pre>{
+  "activation_fn_kwargs": {},
+  "activation_fn_str": "relu",
+  "apply_b_dec_to_input": false,
+  "architecture": "standard",
+  "context_size": 512,
+  "d_in": 3072,
+  "d_sae": 49152,
+  "dataset_path": "NeelNanda/c4-code-20k",
+  "dataset_trust_remote_code": true,
+  "decoder_heuristic_init": true,
+  "decoder_orthogonal_init": false,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "finetuning_scaling_factor": false,
+  "hook_head_index": null,
+  "hook_layer": 30,
+  "hook_name": "blocks.0.hook_mlp_out",
+  "init_encoder_as_decoder_transpose": true,
+  "l1_coefficient": 5,
+  "lp_norm": 1.0,
+  "model_name": "microsoft/Phi-3-mini-4k-instruct",
+  "mse_loss_normalization": null,
+  "noise_scale": 0.0,
+  "normalize_activations": "expected_average_only_in",
+  "normalize_sae_decoder": false,
+  "prepend_bos": true,
+  "sae_lens_training_version": "3.14.0",
+  "scale_sparsity_penalty_by_decoder_norm": true,
+  "use_ghost_grads": false
+}</pre></td>
+                
+                <td><pre>{
+  "activation_fn_kwargs": {},
+  "activation_fn_str": "relu",
+  "apply_b_dec_to_input": false,
+  "architecture": "standard",
+  "context_size": 768,
+  "d_in": 3072,
+  "d_sae": 98304,
+  "dataset_path": "NeelNanda/c4-code-20k",
+  "dataset_trust_remote_code": true,
+  "decoder_heuristic_init": true,
+  "decoder_orthogonal_init": false,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "finetuning_scaling_factor": false,
+  "hook_head_index": null,
+  "hook_layer": 0,
+  "hook_name": "blocks.0.hook_mlp_out",
+  "init_encoder_as_decoder_transpose": true,
+  "l1_coefficient": 16,
+  "lp_norm": 1.0,
+  "model_name": "microsoft/Phi-3-mini-4k-instruct",
+  "mse_loss_normalization": null,
+  "noise_scale": 0.0,
+  "normalize_activations": "expected_average_only_in",
+  "normalize_sae_decoder": false,
+  "prepend_bos": true,
+  "sae_lens_training_version": "3.14.0",
+  "scale_sparsity_penalty_by_decoder_norm": true,
+  "use_ghost_grads": false
+}</pre></td>
+                
+                <td><pre>{
+  "activation_fn_kwargs": {},
+  "activation_fn_str": "relu",
+  "apply_b_dec_to_input": false,
+  "architecture": "standard",
+  "context_size": 512,
+  "d_in": 3072,
+  "d_sae": 49152,
+  "dataset_path": "NeelNanda/c4-code-20k",
+  "dataset_trust_remote_code": true,
+  "decoder_heuristic_init": true,
+  "decoder_orthogonal_init": false,
+  "device": "cuda:0",
+  "dtype": "float32",
+  "finetuning_scaling_factor": false,
+  "hook_head_index": null,
+  "hook_layer": 0,
+  "hook_name": "blocks.0.hook_mlp_out",
+  "init_encoder_as_decoder_transpose": true,
+  "l1_coefficient": 5,
+  "lp_norm": 1.0,
+  "model_name": "microsoft/Phi-3-mini-4k-instruct",
+  "mse_loss_normalization": null,
+  "noise_scale": 0.0,
+  "normalize_activations": "expected_average_only_in",
+  "normalize_sae_decoder": false,
+  "prepend_bos": true,
+  "sae_lens_training_version": "3.14.0",
+  "scale_sparsity_penalty_by_decoder_norm": true,
+  "use_ghost_grads": false
+}</pre></td>
+                
+            </tr>
+        </table>
+    </body>
+    </html>
+    

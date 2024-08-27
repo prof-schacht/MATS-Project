@@ -1,0 +1,26 @@
+# The program to run at each sweep step
+program: sae_multi_sweep.py
+
+# Method for sweeping
+method: bayes
+
+# Project this sweep is part of
+project: phi3-mini-sae-sweep
+
+# Metric to optimize
+metric:
+  name: losses/mse_loss
+  goal: minimize
+
+# Parameters space to search for
+parameters:
+  context_size:
+    values: [256, 512, 1024]
+  expansion_factor:
+    values: [8, 16, 32]
+  l1_coefficient:
+    values: [5, 10, 15]
+  
+
+
+
