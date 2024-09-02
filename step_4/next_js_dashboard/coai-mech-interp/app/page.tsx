@@ -11,6 +11,7 @@ export default function Home() {
   const [data, setData] = useState<any>(null);
   const [index, setIndex] = useState<number>(0);
   const [error, setError] = useState<string | null>(null); // Add state for error handling
+  const [currentFeature, setCurrentFeature] = useState<number>(0);
 
   const fetchData = async (index: number) => {
     try {
@@ -34,6 +35,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchData(index);
+    setCurrentFeature(index);
   }, [index]);
 
   return (
@@ -41,7 +43,7 @@ export default function Home() {
       <Navigation /> {/* Add Navigation component at the top */}
       <Selector setIndex={setIndex} fetchData={fetchData} /> {/* Pass setIndex and fetchData to Selector */}
       {error && <div className="text-red-500">{error}</div>} {/* Display error message if any */}
-      {data && <Content data={data} />} {/* Pass data to Content component */}
+      {data && <Content data={data} currentFeature={currentFeature} />} {/* Pass data to Content component */}
       <div className="mt-auto w-full"> {/* Wrapper div to ensure Footer sticks to the bottom */}
         <Footer /> {/* Add Footer component at the bottom */}
       </div>

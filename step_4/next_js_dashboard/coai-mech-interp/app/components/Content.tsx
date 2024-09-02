@@ -5,9 +5,10 @@ import TestSAE from './testSAE';
 
 interface ContentProps {
   data: any;
+  currentFeature: number;
 }
 
-export default function Content({ data }: ContentProps) {
+export default function Content({ data, currentFeature }: ContentProps) {
   return (
     <div className="flex w-full p-4">
       <div className="w-1/3 p-2">
@@ -15,7 +16,7 @@ export default function Content({ data }: ContentProps) {
       </div>
       <div className="w-2/3 p-2">
         <Plots data={data} /> {/* Pass data to Plots component */}
-        <TestSAE />
+        <TestSAE currentFeature={currentFeature} />
         <HighlightedTable data={data} /> {/* Add HighlightedTable component below Plots */}
       </div>
     </div>
